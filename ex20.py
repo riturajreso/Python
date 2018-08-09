@@ -9,6 +9,9 @@ def rewind(f):
 	f.seek(0)
 
 def print_a_line(line_count,f):
+	#this print option will give the output regargding file object.
+	#print f
+	#readline() - scans each byte of the fi le until it fi nds a \n character, then stops.
 	print line_count, f.readline()
 
 #Using same variable same file obj doesn't return something 
@@ -23,8 +26,8 @@ print "Printing lines"
 line_no = 1;
 print_a_line(line_no,current_file)	
 
-line_no = line_no + 1;
+line_no +=  1;
 print_a_line(line_no,current_file)	
 
-line_no = line_no + 1;
+line_no +=  1;
 print_a_line(line_no,current_file)	
